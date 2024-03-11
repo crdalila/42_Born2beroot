@@ -4,12 +4,12 @@ Configurar una máquina virtual siguiendo una serie de normas concretas
 A continuación, detallo paso a paso el esquema que he seguido para la ejecución de este proyecto.
 ## ÍNDICE
 
-  - [1) Instalar máquina virtual](#1_instalar-máquina-virtual)
-  - [2) Instalar Debian](#instalar-debian)
-  - [3) Configurar el proyecto](#configurar-el-proyecto)
-  - [4) Script](#script)
-  - [5) Crontab](#crontab)
-  - [6) Signature.txt](#signature-.-txt)
+  - [1) Instalar máquina virtual](#1-instalar-máquina-virtual)
+  - [2) Instalar Debian](#2-instalar-debian)
+  - [3) Configurar el proyecto](#3-configurar-el-proyecto)
+  - [4) Script](#4-script)
+  - [5) Crontab](#5-crontab)
+  - [6) Signature.txt](#6-signature-.-txt)
 
 ## 1 Instalar máquina virtual
 Descargamos la máquina virtual Virtualbox y la instalamos en nuestra máquina real
