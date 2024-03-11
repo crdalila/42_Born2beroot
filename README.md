@@ -4,20 +4,20 @@ Configurar una máquina virtual siguiendo una serie de normas concretas
 A continuación, detallo paso a paso el esquema que he seguido para la ejecución de este proyecto.
 ## ÍNDICE
 
-  - [1) Instalar máquina virtual](#instalar-máquina-virtual)
+  - [1) Instalar máquina virtual](#1_instalar-máquina-virtual)
   - [2) Instalar Debian](#instalar-debian)
   - [3) Configurar el proyecto](#configurar-el-proyecto)
   - [4) Script](#script)
   - [5) Crontab](#crontab)
   - [6) Signature.txt](#signature-.-txt)
 
-## 1) Instalar máquina virtual
+## 1 Instalar máquina virtual
 Descargamos la máquina virtual Virtualbox y la instalamos en nuestra máquina real
 
-## 2) Instalar Debian
+## 2 Instalar Debian
 Descargamos el sistema operativo Debian (recomendado para personas que nunca hemos instalado máquinas virtuales y somos principiantes en la programación)
 
-## 3) Configurar el proyecto
+## 3 Configurar el proyecto
 Con las especificaciones que nos pide el ejercicio, pasamos a configurar la máquina virtual.
 
   + **Instalar sudo y configurar usuarios y grupos**
@@ -103,7 +103,7 @@ Con las especificaciones que nos pide el ejercicio, pasamos a configurar la máq
     - **ssh dalcabre@localhost -p 4242** -> para entrar en la máquina virtual desde la terminal de otra máquina.
 
 
-## 4) Script
+## 4 Script
 
   *Script = Secuencia de comandos guardada en un fichero, cuando se ejecuta el fichero, hace lo que pone dentro.*
 
@@ -157,7 +157,7 @@ Con las especificaciones que nos pide el ejercicio, pasamos a configurar la máq
     - **journalctl** -> recopilación y administraión de registros del sistema
     - **journalctl -COMM=sudo | grep COMMAND | wc -l** -> especificamos las entradas por ruta y solo si aparece en la línea de comandos
 
-## 5) Crontab
+## 5 Crontab
   *Crontab = Administrador de procesos en segundo plano, los procesos son ejecutados en el momento que se especifique en el fichero.*
   - **sudo crontab -u root -e** -> para editar el fichero crontab
   Dentro del fichero, añadimos esta línea:
@@ -166,7 +166,7 @@ Con las especificaciones que nos pide el ejercicio, pasamos a configurar la máq
 ```
   Esto hará que el archivo script creado en el paso anterior, se ejecute cada 10 minutos.
   
-## 6) Signature.txt
+## 6 Signature.txt
   - Apagamos la máquina virtual
   - Acceder mediante Terminal de nuestra máquina real donde tengamos nuestro archivo .vdi (en mi caso en sgoinfre/goinfre/Perso/dalcabre/Born2beroot)
   - Ejecutar el comando **shasum nombredemaquina.vdi** en la terminal de la máquina real
